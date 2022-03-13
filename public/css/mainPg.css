@@ -1,0 +1,57 @@
+.tb2{
+    width: 1000px;
+    height: 550px;
+    background-color: #3b3b3b;
+    margin: 0 auto;
+    padding-top:20px;
+    border-radius: 10px;
+    border: 5px solid #2e2e2e;
+    font-family: 'Quicksand', sans-serif;
+}
+.text{
+    text-align: center;
+    font-size: 15px;
+    margin: 0;
+    color: #000000;
+}
+h1{
+    color: #000000;
+}
+body{
+    background-color: #809dee;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+.pad{
+    padding: 100px;
+}
+.img{
+    background-image: url("gatsu.jpg");
+    background-size: cover;
+    border-radius: 250px;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    border: 5px solid #000000;
+}
+.img2{
+    background-image: url("takanodan.png");
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 5px solid#000000;
+    background-color: #f5f5f5;
+    color: #000000;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
