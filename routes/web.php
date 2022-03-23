@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\mainController;
+use App\Http\Controllers\bioController;
+use App\Http\Controllers\commentsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,12 +16,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('main');
-});
-Route::get('/bio', function () {
-    return view('bio');
-});
-Route::get('/comments', function () {
-    return view('comments');
-});
+Route::get('main', [mainController::class, 'index']);
+Route::get('/', [mainController::class, 'index']);
+Route::get('bio', [bioController::class, 'index']);
+Route::get('comments', [commentsController::class, 'index']);
