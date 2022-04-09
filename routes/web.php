@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\mainController;
 use App\Http\Controllers\bioController;
 use App\Http\Controllers\commentsController;
+use App\Http\Controllers\logController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,7 +17,9 @@ use App\Http\Controllers\commentsController;
 |
 */
 
-Route::get('main', [mainController::class, 'index']);
+Route::get('main', [mainController::class, 'index'])->name('main');
 Route::get('/', [mainController::class, 'index']);
 Route::get('bio', [bioController::class, 'index']);
 Route::get('comments', [commentsController::class, 'index']);
+Route::get('login', [logController::class, 'index'])->name('login');
+Route::post('login1', [logController::class, 'login1']);
