@@ -15,6 +15,7 @@
         @yield('activebar')
       </ul>
     </div>
+      <a class="nav-link" href="login">Login Here</a>
   </div>
 </nav>
 <br><br><br>
